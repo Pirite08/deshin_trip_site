@@ -3365,7 +3365,6 @@ input, select, textarea {
 				padding-right: 0 !important;
 				text-indent: 4em;
 				white-space: nowrap;
-				width: 5em;
 			}
 
 				#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
