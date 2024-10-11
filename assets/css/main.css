@@ -3354,7 +3354,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 500px) {
 
 			#header .logo span {
 				display: none;
