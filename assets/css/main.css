@@ -3128,7 +3128,7 @@ input, select, textarea {
 		font-weight: 600;
 		height: 3.25em;
 		left: 0;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.2em;
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
@@ -3144,7 +3144,8 @@ input, select, textarea {
 			font-size: 0.8em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 0; /* 좌우 여백을 없앰 */
+			vertical-align: middle; /* 텍스트와 이미지를 같은 높이로 맞춤 */
 		}
 
 			#header .logo strong {
@@ -3156,7 +3157,7 @@ input, select, textarea {
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
+				padding: 0;
 			}
 
 			#header .logo:hover strong {
