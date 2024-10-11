@@ -38,10 +38,6 @@ ol, ul {
 	list-style: none;
 }
 
-.no-underline {
-    text-decoration: none !important; /* 해당 클래스가 적용된 요소에만 밑줄 제거 */
-}
-
 blockquote, q {
 	quotes: none;
 }
