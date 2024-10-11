@@ -20,26 +20,22 @@
 				<!-- Header -->
 					<header id="header">
 						<img src="images/school_sym.png"/>
-						<a href="index.html" class="logo"><strong>24년 대신고 수학여행</strong> <span></span></a>
+						<a href="index.html" class="logo"><strong>2024학년도 대전대신고 1학년 수학여행</strong> <span></span></a>
 						<nav>
-							<a href="#menu">Menu</a>
+							<a href="#menu"></a>
 						</nav>
 					</header>
 
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<li><font size="5"><a href="index.html">메인 페이지</a><hr style="margin: 15px 0;"></font></li>
-							<li><font size="5"><a href="schedule.html">반별 일정</a><hr style="margin: 15px 0;"></font></li>
-							<li><font size="5"><a href="building.html">관광지</a><hr style="margin: 15px 0;"></font></li>
-							<li><font size="5"><a href="tip.html">여행 팁</a><hr style="margin: 15px 0;"></font></li>
-							<li><font size="5"><a href="japanese.html">자주 쓰이는 일본어</a><hr style="margin: 15px 0;"></font></li>
-							<li><font size="5"><a href="caution.html">주의사항</a></font></li>
-						</ul>
-						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
-						</ul>
+							<div class="clickable-div" onclick="location.href='index.html';"><font size="5">메인 페이지<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='schedule.html';"><font size="5">반별 일정<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='building.html';"><font size="5">관광지<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='food.html';"><font size="5">식단<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='japanese.html';"><font size="5">자주 쓰이는 일본어<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='caution.html';"><font size="5">주의사항<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='emer.html';"><font size="5">비상연락망</font></div>
 					</nav>
 
 				<!-- Main -->
@@ -48,35 +44,43 @@
 							<div class="inner">
 								<header>
 									<h1 class="imp1">비상연락망</h1>
-					
-									<p>GN코리아 김소진 : 010-3266-8497</p>
-									<p>오세철 학년부장 : 010-6312-7813</p>
-									<p>문가람 : 010-3833-6156</p>
+									<div class="contact-list">
+										<h3>한국 연락처</h3>
+   										<div class="contact-item">GN코리아 김소진 : 010-3266-8497</div>
+   										<div class="contact-item">학년부장 오세철 : 010-6312-7813</div>
+  										<div class="contact-item">그냥멋진 문가람 : 010-3833-6156</div>
 
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-
-									<p>일본 경찰 : 110</p>
-									<p>일본 화재/구급차 : 119</p>
-									<p>주일본대한민국대사관 : (81-3)3452-7611/9 (대표)</p>
-									<p>도쿄의과대학병원 : +81-03-3342-6111</p>
-									<p>게이오 대학병원 +81-03-3353-1211</p>
-									<p>하코네병원 : +81-0465-22-3196</p>
-					
-									<br/>
-									<br/>
-									<br/>
-									<br/>
-
-									<h5>전화이용안내</h5>
-									<p>일본에서 할국으로 걸 때 : 001-82(국가번호)-지역번호(0을 뺴고)-전화번호 <br/>
-									ex) 일본에서 학교로 걸 떄 : 001-82-42-585-5901</p>
+   										<h3>일본 연락처</h3>
+    									<div class="contact-item">일본 경찰 : 110</div>
+   										<div class="contact-item">일본 화재/구급차 : 119</div>
+   										<div class="contact-item">주일본대한민국대사관 : (81-3)3452-7611/9</div>
+   										<div class="contact-item">도쿄의과대학병원 : +81-03-3342-6111</div>
+   										<div class="contact-item">게이오대학병원 : +81-03-3353-1211</div>
+   										<div class="contact-item">하코네병원 : +81-0465-22-3196</div>
+    
+   										<h3>전화 이용 안내</h3>
+    									<div class="contact-item">일본에서 한국으로 걸 때 : 001-82(국가번호)-지역번호(0을 빼고)-전화번호</div>
+   										<div class="contact-item">ex)	 일본에서 학교로 걸 때 : 001-82-42-585-5901</div>
+									</div>
+									
 
 									<style>
 										.imp1{
 											text-align: center;
+										}
+										.contact-list {
+   											margin-top: 20px;
+   											padding: 10px;
+										}
+										.contact-item {
+    										padding: 8px 0;
+    										font-size: 1rem;
+    										line-height: 1.5;
+    										border-bottom: 1px solid #dddddd75; /* 각 항목을 구분하기 위해 아래에 경계선을 추가 */
+										}
+										h3 {
+    										margin-top: 20px;
+										    font-size: 1.2rem;
 										}
 									</style>
 								</header>
@@ -91,7 +95,7 @@
 									<div class="contact-method">
 										<span class="icon solid alt fa-envelope"></span>
 										<h3>Email</h3>
-										<a href="#">information@untitled.tld</a>
+										<a href="#">24_10510@dshs.kr</a>
 									</div>
 								</section>
 								<section>

@@ -22,7 +22,17 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-family: "Do Hyeon", sans-serif;
-  	font-weight: 200;}
+  	font-weight: 200;
+	text-decoration: none;
+	}
+
+.clickable-div {
+	cursor: pointer;
+}
+
+.clickable-div:hover {
+	color: #9bf1fd
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -3142,8 +3152,7 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
+				color: #ffffff;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
@@ -3151,11 +3160,11 @@ input, select, textarea {
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				color: #9bf1ff;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				color: #53e3fb;
 			}
 
 		#header nav {
@@ -3191,19 +3200,19 @@ input, select, textarea {
 				}
 
 				#header nav a[href="#menu"] {
-					padding-right: 3.325em !important;
+					padding-right: 3em !important;
 				}
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
-						background-size: 24px 32px;
+						background-size: 24px 24px;
 						content: '';
 						display: block;
 						height: 100%;
 						position: absolute;
-						right: 1.5em;
+						right: 0.5em;
 						top: 0;
 						vertical-align: middle;
 						width: 24px;
@@ -3224,11 +3233,11 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:last-child {
-						padding-right: 3.875em !important;
+						padding-right: 0em !important;
 					}
 
 						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-							right: 2em;
+							right: 0em;
 						}
 
 		#header.reveal {
@@ -3287,11 +3296,11 @@ input, select, textarea {
 		@media screen and (max-width: 1680px) {
 
 			#header nav a[href="#menu"] {
-				padding-right: 3.75em !important;
+				padding-right: 3em !important;
 			}
 
 				#header nav a[href="#menu"]:last-child {
-					padding-right: 4.25em !important;
+					padding-right: 4em !important;
 				}
 
 		}
@@ -3328,7 +3337,7 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"] {
-						padding-right: 3.25em !important;
+						padding-right: 2em !important;
 					}
 
 						#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
@@ -3354,9 +3363,8 @@ input, select, textarea {
 			#header nav a[href="#menu"] {
 				overflow: hidden;
 				padding-right: 0 !important;
-				text-indent: 5em;
+				text-indent: 4em;
 				white-space: nowrap;
-				width: 5em;
 			}
 
 				#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
