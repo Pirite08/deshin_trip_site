@@ -26,6 +26,14 @@ section, summary, time, mark, audio, video {
 	text-decoration: none;
 	}
 
+.clickable-div {
+	cursor: pointer;
+}
+
+.clickable-div:hover {
+	color: #9bf1ff
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
