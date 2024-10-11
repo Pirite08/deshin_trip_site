@@ -2213,7 +2213,7 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
-			width: 100%;
+			width: 60%;
 		}
 
 			.image.main img {
