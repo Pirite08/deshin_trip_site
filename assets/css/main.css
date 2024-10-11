@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
   	font-weight: 200;
 	text-decoration: none;
 	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 	}
 
 .clickable-div {
