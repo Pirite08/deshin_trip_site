@@ -29,7 +29,7 @@
 				<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
-							<div onclick="location.href='index.html';"><font size="5">메인 페이지<hr style="margin: 15px 0;"></font></div>
+							<div class="clickable-div" onclick="location.href='index.html';"><font size="5">메인 페이지<hr style="margin: 15px 0;"></font></div>
 							
 							<li><font size="5"><a href="schedule.html">반별 일정</a><hr style="margin: 15px 0;"></font></li>
 							<li><font size="5"><a href="building.html">관광지</a><hr style="margin: 15px 0;"></font></li>
@@ -37,6 +37,16 @@
 							<li><font size="5"><a href="japanese.html">자주 쓰이는 일본어</a><hr style="margin: 15px 0;"></font></li>
 							<li><font size="5"><a href="caution.html">주의사항</a><hr style="margin: 15px 0;"></font></li>
 							<li><font size="5"><a href="emer.html">비상연락망</a></font></li>
+
+							<style>
+								.clickable-div {
+								  cursor: pointer;
+								}
+							  
+								.clickable-div:hover {
+								  color: #9BF1FF; /* 마우스를 올렸을 때 글자 색깔을 빨간색으로 변경 */
+								}
+							  </style>
 						</ul>
 					</nav>
 
