@@ -3212,11 +3212,9 @@ input, select, textarea {
 			display: -ms-flex;
 			display: flex;
 			-moz-justify-content: -moz-flex-end;
-			-webkit-justify-content: -webkit-flex-end;
 			-ms-justify-content: -ms-flex-end;
 			justify-content: flex-end;
 			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
 			order: 3;  /* 메뉴를 가장 왼쪽 배치 */
    			margin-left: auto;  /* 왼쪽 정렬 */
