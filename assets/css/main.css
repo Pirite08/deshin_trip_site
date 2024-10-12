@@ -3154,24 +3154,6 @@ input, select, textarea {
 			align-items: center; /* 수직으로 가운데 정렬 */
 		}
 
-		#header .logo-24 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-			color: #ffffff;
-			display: inline-block;
-			line-height: 1.65em;
-			margin-right: 0.325em;
-			padding: 0;
-		}
-		
-		#header .logo-24:hover strong {
-			color: #9bf1ff;
-		}
-		#header .logo-24:active strong {
-			color: #9bf1ff;
-		}
 			#header .logo strong {
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
