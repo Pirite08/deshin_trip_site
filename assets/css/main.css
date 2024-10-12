@@ -3254,6 +3254,7 @@ input, select, textarea {
 						right: 0.5em;
 						top: 0;
 						vertical-align: middle;
+						justify-content: center;
 						width: 24px;
 					}
 
