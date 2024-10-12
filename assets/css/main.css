@@ -24,6 +24,8 @@ section, summary, time, mark, audio, video {
 	font-family: "Do Hyeon", sans-serif;
   	font-weight: 200;
 	text-decoration: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
 	}
 
 .clickable-div {
@@ -2211,7 +2213,7 @@ input, select, textarea {
 		.image.main {
 			display: block;
 			margin: 2.5em 0;
-			width: 100%;
+			width: 60%;
 		}
 
 			.image.main img {
@@ -3128,7 +3130,7 @@ input, select, textarea {
 		font-weight: 600;
 		height: 3.25em;
 		left: 0;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.15em;
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
@@ -3137,14 +3139,19 @@ input, select, textarea {
 		width: 100%;
 		z-index: 10000;
 	}
+		#header .logo-image {
+			margin-right: 10px; /* 이미지와 텍스트 사이에 여백 추가 */
+    		height: 30px; /* 이미지 크기 조정 */
+		}
 
 		#header .logo {
 			border: 0;
-			display: inline-block;
-			font-size: 0.8em;
+			display: flex;
+			font-size: 0.9em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 0; /* 좌우 여백을 없앰 */
+			align-items: center; /* 수직으로 가운데 정렬 */
 		}
 
 			#header .logo strong {
@@ -3156,7 +3163,7 @@ input, select, textarea {
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
+				padding: 0;
 			}
 
 			#header .logo:hover strong {
