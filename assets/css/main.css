@@ -2778,6 +2778,18 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
+			.tiles article P {
+				font-size: 13px;
+			}
+
+			.tiles article h2 {
+				font-size: 1.75em;
+			}
+
+				.tiles article h2 a:hover {
+					color: inherit !important;
+				}
+
 				.tiles article h3 a:hover {
 					color: inherit !important;
 				}
@@ -2809,7 +2821,7 @@ input, select, textarea {
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				background-color: rgba(0, 0, 0, 0.5);
 				content: '';
 				display: block;
 				height: 100%;
