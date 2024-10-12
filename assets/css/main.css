@@ -2453,7 +2453,7 @@ input, select, textarea {
 	}
 
 		table tbody tr {
-			border: solid 1px rgba(212, 212, 255, 0.1);
+			border: solid 1px rgba(250, 253, 211, 0.815);
 			border-left: 0;
 			border-right: 0;
 		}
