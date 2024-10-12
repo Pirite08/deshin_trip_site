@@ -3212,7 +3212,7 @@ input, select, textarea {
 			display: -ms-flex;
 			display: flex;
 			justify-content: center; /* 가로 중앙 정렬 */
-    	align-items: center; /* 수직 중앙 정렬 */
+    		align-items: center; /* 수직 중앙 정렬 */
 			-moz-justify-content: -moz-flex-end;
 			-ms-justify-content: -ms-flex-end;
 			justify-content: flex-end;
@@ -3224,12 +3224,13 @@ input, select, textarea {
 		}
 
 			#header nav a {
+				display: flex;
 				padding: 0.5em 1em; /* 기본 여백 설정 */
 				margin: 0; /* 불필요한 마진 제거 */
 				align-items: center;  /* 수직 방향 중앙 정렬 */
 				text-align: center; /* 텍스트 중앙 정렬 */
 				border: 0;
-				display: block;
+				
 				font-size: 0.8em;
 				line-height: inherit;
 				position: relative;
