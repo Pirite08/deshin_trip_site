@@ -3175,6 +3175,7 @@ input, select, textarea {
 				color: #53e3fb;
 			}
 		#header .title {
+			flex-grow: 1;
 			border: 0;
 			display: flex;
 			font-size: 0.9em;
@@ -3182,6 +3183,7 @@ input, select, textarea {
 			line-height: inherit;
 			padding: 0; /* 좌우 여백을 없앰 */
 			align-items: center; /* 수직으로 가운데 정렬 */
+			text-align: center;
 		}
 			#header .title strong {
 				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
