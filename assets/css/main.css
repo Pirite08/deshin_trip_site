@@ -3225,6 +3225,7 @@ input, select, textarea {
 
 			#header nav a {
 				display: flex;
+				display: inline-flex; 
 				padding: 0.5em 1em; /* 기본 여백 설정 */
 				margin: 0; /* 불필요한 마진 제거 */
 				align-items: center;  /* 수직 방향 중앙 정렬 */
