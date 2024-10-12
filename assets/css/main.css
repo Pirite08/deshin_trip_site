@@ -3211,18 +3211,21 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			justify-content: center; /* 가로 중앙 정렬 */
+    	align-items: center; /* 수직 중앙 정렬 */
 			-moz-justify-content: -moz-flex-end;
 			-ms-justify-content: -ms-flex-end;
 			justify-content: flex-end;
 			-moz-flex-grow: 1;
 			-ms-flex-grow: 1;
 			order: 3;  /* 메뉴를 가장 왼쪽 배치 */
-   			margin-left: auto;  /* 왼쪽 정렬 */
 			height: inherit;
 			line-height: inherit;
 		}
 
 			#header nav a {
+				padding: 0.5em 1em; /* 기본 여백 설정 */
+				margin: 0; /* 불필요한 마진 제거 */
 				align-items: center;  /* 수직 방향 중앙 정렬 */
 				text-align: center; /* 텍스트 중앙 정렬 */
 				border: 0;
@@ -3235,7 +3238,7 @@ input, select, textarea {
 			}
 
 				#header nav a:last-child {
-					padding-right: 1.5em;
+					padding-right: 0em;
 				}
 
 				
