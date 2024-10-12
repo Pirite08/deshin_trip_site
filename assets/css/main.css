@@ -3223,6 +3223,7 @@ input, select, textarea {
 		}
 
 			#header nav a {
+				align-items: center;  /* 수직 방향 중앙 정렬 */
 				border: 0;
 				display: block;
 				font-size: 0.8em;
