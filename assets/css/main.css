@@ -3220,6 +3220,8 @@ input, select, textarea {
    			margin-left: auto;  /* 왼쪽 정렬 */
 			height: inherit;
 			line-height: inherit;
+			align-items: center;
+			 
 		}
 
 			#header nav a {
