@@ -3146,7 +3146,7 @@ input, select, textarea {
 		}
 
 		#header .logo {
-			order: 3;  /* 로고를 가장 오른쪽에 배치 */
+			order: 1;  /* 로고를 가장 오른쪽에 배치 */
 			margin-left: auto;  /* 오른쪽 정렬 */
 			border: 0;
 			display: flex;
@@ -3177,7 +3177,7 @@ input, select, textarea {
 				color: #53e3fb;
 			}
 		#header .title {
-			order: 2;  /* 가운데 배치 */
+			order: 3;  /* 가운데 배치 */
 			flex-grow: 1;
 			border: 0;
 			display: flex;
