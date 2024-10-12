@@ -3234,7 +3234,6 @@ input, select, textarea {
 				
 				font-size: 0.8em;
 				line-height: inherit;
-				position: relative;
 				vertical-align: middle;
 				margin-left: 0;  /* 오른쪽 여백을 제거하여 빈 공간을 없앰 */
 			}
@@ -3346,6 +3345,22 @@ input, select, textarea {
 					padding-right: 4em !important;
 				}
 
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
+					}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
+					}
+
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
+						}
+
 		}
 
 		@media screen and (max-width: 1280px) {
@@ -3357,6 +3372,22 @@ input, select, textarea {
 				#header nav a[href="#menu"]:last-child {
 					padding-right: 4.5em !important;
 				}
+
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
+					}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
+					}
+
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
+						}
 
 		}
 
@@ -3373,27 +3404,28 @@ input, select, textarea {
 
 				#header nav a {
 					padding: 0 0.5em;
+					display: block !important;
 				}
 
-					#header nav a:last-child {
-						padding-right: 1em;
+				#header nav a:last-child {
+					padding-right: 1em;
+				}
+
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
 					}
 
-					#header nav a[href="#menu"] {
-						padding-right: 2em !important;
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
 					}
 
-						#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-							right: 0.75em;
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
 						}
-
-						#header nav a[href="#menu"]:last-child {
-							padding-right: 4em !important;
-						}
-
-							#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-								right: 1.5em;
-							}
 
 		}
 
