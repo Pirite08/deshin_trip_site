@@ -3164,6 +3164,7 @@ input, select, textarea {
 				line-height: 1.65em;
 				margin-right: 0.325em;
 				padding: 0;
+				text-align: center;
 			}
 
 			#header .logo:hover strong {
