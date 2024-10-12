@@ -3138,6 +3138,7 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		justify-content: space-between; /* 요소들을 가로로 균등하게 배치 */
 	}
 		#header .logo-image {
 			margin-right: 10px; /* 이미지와 텍스트 사이에 여백 추가 */
