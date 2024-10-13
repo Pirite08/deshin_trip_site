@@ -50,47 +50,132 @@
 										
 									</header>
 
-									<!-- Content -->
-										<h2 id="content">사람들과 기본적인 인사와 대답을 할 때
-										</h2>
-										<p>1.“하이”<br/>&nbsp;&nbsp;&nbsp;네!, 알겠습니다<br/><br/>2.“이-에”<br/>&nbsp;&nbsp;&nbsp;아니요<br/><br/>3.“스미마셍”<br/>&nbsp;&nbsp;&nbsp;미안합니다, 저기요!(왠만한 상황에 모두 사용하도록 하자!)
-											<br/><br/>4.아리가또-고자이마스<br/>&nbsp;&nbsp;&nbsp;감사합니다(모든 상황에 사용하도록 하자)</p>
+									<div class="col-4 col-12-medium">
+										<audio id="konnichiwa" src="voice/konnichiwa.mp3"></audio>
+										<audio id="ohayou" src="voice/ohayou.mp3"></audio>
+										<audio id="konbanwa" src="voice/konbanwa.mp3"></audio>
+										<audio id="arigatou" src="voice/arigatou.mp3"></audio>
+										<audio id="arigatougozaimasu" src="voice/arigatougozaimasu.mp3"></audio>
+										<audio id="sumimasen" src="voice/sumimasen.mp3"></audio>
+										<audio id="sayounara" src="voice/sayounara.mp3"></audio>
 
-										<h2 id="content">1일차 석식</h2>
-										<p>1. 샤브요 요츠야점(1반, 3반)<br/>&nbsp;&nbsp; 신주쿠점(2반) : 샤브샤브 뷔페 <br/>&nbsp;&nbsp; 고탄다점(9반, 10반) : 샤브샤브 뷔페<br/><br/>2. 오다이바 오션 뷔페(4반, 5반, 6반, 7반, 8반) : 스끼야끼 정식</p>
+										<audio id="hai" src="voice/hai.mp3"></audio>
+										<audio id="iie" src="voice/iie.mp3"></audio>
+										<audio id="wakarimasen" src="voice/wakarimasen.mp3"></audio>
+										<audio id="mouichido" src="voice/mouichido.mp3"></audio>
+										<audio id="yukkuri" src="voice/yukkuri.mp3"></audio>
+										<audio id="eigo" src="voice/eigo.mp3"></audio>
 
+										<audio id="ikura" src="voice/ikura.mp3"></audio>
+										<audio id="takai" src="voice/takai.mp3"></audio>
+										<audio id="kore" src="voice/kore.mp3"></audio>
+										<audio id="shichaku" src="voice/shichaku.mp3"></audio>
 
-										<hr style="border: 1px solid white; width: 90%;">
-
-
-										<h2>2일차 조식</h2>
-										<p>신주쿠 워싱턴 호텔 : 아메리칸 조식 뷔페</p>
-
-										<h2>2일차 중식,석식</h2>
-										<p>밀쿠폰 지급 후 개인 자유식</p>
-
-
-										<hr style="border: 1px solid white; width: 90%;">
-
-
-										<h2 id="content">3일차 조식</h2>
-										<p>신주쿠 워싱턴 호텔 : 아메리칸 조식 뷔페</p>
-
-										<h2 id="content">3일차 중식</h2>
-										<p>중식코한소(전원) : 대나무밥 정식</p>
-
-										<h2 id="content">3일차 석식</h2>
-										<p>동경 이동후 자유식 : 치즈함박스테이크, 라이스 오요모리, 데일리 스프, 드링크바, 미니 샐러드, 카라아게</p>
+										<audio id="menu" src="voice/menu.mp3"></audio>
+										<audio id="osusume" src="voice/osusume.mp3"></audio>
+										<audio id="kudasai" src="voice/kudasai.mp3"></audio>
+										<audio id="mizu" src="voice/mizu.mp3"></audio>
+										<audio id="okaikei" src="voice/okaikei.mp3"></audio>
 
 
-										<hr style="border: 1px solid white; width: 90%;">
+										<script>
+											function playAudio(id) {
+												const audio = document.getElementById(id);
+												audio.play();
+											}
+										</script>
+										<style>
+											.korean-trans {
+												font-size: 20px;
+												color:cornflowerblue;
+											}
+										</style>
+										<h2>기본 인사말</h2>
+										<ol style="line-height: 40px;">
+											<li>こんにちは (콘니치와)<br/><span class="korean-trans">안녕하세요 (낮 인사)</span><br/>
+												<button class="button small" onclick="playAudio('konnichiwa')">발음 듣기 (こんにちは)</button>
+											</li>
+											<li>おはようございます (오하요 고자이마스)<br/><span class="korean-trans">좋은 아침입니다 (아침 인사)</span><br/>
+												<button class="button small" onclick="playAudio('ohayou')">발음 듣기 (おはようございます)</button>
+											</li>
+											<li>こんばんは (콘반와)<br/><span class="korean-trans">안녕하세요 (저녁 인사)</span><br/>
+												<button class="button small" onclick="playAudio('konbanwa')">발음 듣기 (こんばんは)</button>
+											</li>
+											<li>ありがとう (아리가토)<br/><span class="korean-trans">고마워요</span><br/>
+												<button class="button small" onclick="playAudio('arigatou')">발음 듣기 (ありがとう)</button>
+											</li>
+											<li>ありがとうございます (아리가토 고자이마스)<br/><span class="korean-trans">감사합니다 (더 정중한 표현)</span><br/>
+												<button class="button small" onclick="playAudio('arigatougozaimasu')">발음 듣기 (ありがとうございます)</button>
+											</li>
+											<li>すみません (스미마센)<br/><span class="korean-trans">실례합니다, 죄송합니다</span><br/>
+												<button class="button small" onclick="playAudio('sumimasen')">발음 듣기 (すみません)</button>
+											</li>
+											<li>さようなら (사요나라)<br/><span class="korean-trans">안녕히 가세요</span><br/>
+												<button class="button small" onclick="playAudio('sayounara')">발음 듣기 (さようなら)</button>
+											</li>
+										</ol>
+										<hr/>
+										<h2>기본 의사소통</h2>
+										<ol style="line-height: 40px;">
+											<li>はい (하이)<br/><span class="korean-trans">네</span><br/>
+												<button class="button small" onclick="playAudio('hai')" >발음 듣기 (はい)</button>
+											</li>
+											<li>いいえ (이에)<br/><span class="korean-trans">아니요</span><br/>
+												<button class="button small" onclick="playAudio('iie')">발음 듣기 (いいえ)</button>
+											</li>
+											<li>わかりません (와카리마센)<br/><span class="korean-trans">이해하지 못했습니다</span><br/>
+												<button class="button small" onclick="playAudio('wakarimasen')">발음 듣기 (わかりません)</button>
+											</li>
+											<li>もう一度お願いします (모 이치도 오네가이 시마스)<br/><span class="korean-trans">다시 한 번 부탁드립니다</span><br/>
+												<button class="button small" onclick="playAudio('mouichido')">발음 듣기 (もう一度お願いします)</button>
+											</li>
+											<li>ゆっくり話してください (윳쿠리 하나시테 쿠다사이)<br/><span class="korean-trans">천천히 말씀해 주세요</span><br/>
+												<button class="button small" onclick="playAudio('yukkuri')">발음 듣기 (ゆっくり話してください)</button>
+											</li>
+											<li>英語が話せますか？(에이고가 하나세마스 카?)<br/><span class="korean-trans">영어 할 수 있나요?</span><br/>
+												<button class="button small" onclick="playAudio('eigo')">발음 듣기 (英語が話せますか？)</button>
+											</li>
+										</ol>
+										<hr/>
+										<h2>쇼핑 및 가격 묻기</h2>
+										<ol style="line-height: 40px;">
+											<li>いくらですか？ (이쿠라 데스 카?)<br/><span class="korean-trans">얼마인가요?</span><br/>
+												<button class="button small" onclick="playAudio('ikura')">발음 듣기 (いくらですか？)</button>
+											</li>
+											<li>高いですね (타카이 데스 네)<br/><span class="korean-trans">비싸네요.</span><br/>
+												<button class="button small" onclick="playAudio('takai')">발음 듣기 (高いですね)</button>
+											</li>
+											<li>これをください (코레 오 쿠다사이)<br/><span class="korean-trans">이걸 주세요.</span><br/>
+												<button class="button small" onclick="playAudio('kore')">발음 듣기 (これをください)</button>
+											</li>
+											<li>試着してもいいですか？ (시착쿠 시테모 이이 데스 카?)<br/><span class="korean-trans">입어봐도 되나요?</span><br/>
+												<button class="button small" onclick="playAudio('shichaku')">발음 듣기 (試着してもいいですか？)</button>
+											</li>
+										</ol>
+										<hr/>
+										<h2>식당에서</h2>
+										<ol style="line-height: 40px;">
+											<li>メニューをください (메뉴 오 쿠다사이)<br/> <span class="korean-trans">메뉴를 주세요.</span><br/>
+												<button class="button small" onclick="playAudio('menu')">발음 듣기 (メニューをください)</button>
+											</li>
+											<li>おすすめは何ですか？ (오스스메 와 난 데스 카?)<br/> <span class="korean-trans">추천 요리는 무엇인가요?</span><br/>
+												<button class="button small" onclick="playAudio('osusume')">발음 듣기 (おすすめは何ですか？)</button>
+											</li>
+											<li>○○をください (○○ 오 쿠다사이) <br/><span class="korean-trans">○○를 주세요.</span><br/>
+												<button class="button small" onclick="playAudio('kudasai')">발음 듣기 (○○をください)</button>
+											</li>
+											<li>水をお願いします (미즈 오 오네가이 시마스) <br/><span class="korean-trans">물 좀 주세요.</span><br/>
+												<button class="button small" onclick="playAudio('mizu')">발음 듣기 (水をお願いします)</button>
+											</li>
+											<li>お会計をお願いします (오카이케이 오 오네가이 시마스) <br/><span class="korean-trans">계산서 주세요.</span><br/>
+												<button class="button small" onclick="playAudio('okaikei')">발음 듣기 (お会計をお願いします)</button>
+											</li>
+										</ol>
+									</div>
 
 
-										<h2 id="content">4일차 조식</h2>
-										<p>신주쿠 워싱턴 호텔 : 아메리칸 조식 뷔페</p>
-										<h2 id="content">3</h2>
 										<div class="row">
-											<div class="col-6 col-12-small">
+											<div class="col-6 col-12-normal">
 												<h3>Sem turpis amet semper</h3>
 												<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat commodo eu sed ante lacinia. Sapien a lorem in integer ornare praesent commodo adipiscing arcu in massa commodo lorem accumsan at odio massa ac ac. Semper adipiscing varius montes viverra nibh in adipiscing blandit tempus accumsan.</p>
 											</div>
