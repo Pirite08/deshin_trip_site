@@ -22,7 +22,19 @@ section, summary, time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-family: "Do Hyeon", sans-serif;
-  	font-weight: 200;}
+  	font-weight: 200;
+	text-decoration: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+	}
+
+.clickable-div {
+	cursor: pointer;
+}
+
+.clickable-div:hover {
+	color: #9bf1fd
+}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2766,6 +2778,18 @@ input, select, textarea {
 				font-size: 1.75em;
 			}
 
+			.tiles article P {
+				font-size: 13px;
+			}
+
+			.tiles article h2 {
+				font-size: 1.75em;
+			}
+
+				.tiles article h2 a:hover {
+					color: inherit !important;
+				}
+
 				.tiles article h3 a:hover {
 					color: inherit !important;
 				}
@@ -2797,7 +2821,7 @@ input, select, textarea {
 			}
 
 			.tiles article:after {
-				background-color: rgba(36, 41, 67, 0.25);
+				background-color: rgba(0, 0, 0, 0.5);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3118,7 +3142,7 @@ input, select, textarea {
 		font-weight: 600;
 		height: 3.25em;
 		left: 0;
-		letter-spacing: 0.25em;
+		letter-spacing: 0.15em;
 		line-height: 3.25em;
 		margin: 0;
 		position: fixed;
@@ -3126,15 +3150,24 @@ input, select, textarea {
 		top: 0;
 		width: 100%;
 		z-index: 10000;
+		padding: 0.2em;  /* 좌우 여백 추가 */
 	}
+		#header .logo-image {
+			margin-right: 10px; /* 이미지와 텍스트 사이에 여백 추가 */
+    		height: 30px; /* 이미지 크기 조정 */
+		}
 
 		#header .logo {
+			order: 1;  /* 로고를 가장 오른쪽에 배치 */
+			margin-left: auto;  /* 오른쪽 정렬 */
 			border: 0;
-			display: inline-block;
-			font-size: 0.8em;
+			display: flex;
+			font-size: 0.9em;
 			height: inherit;
 			line-height: inherit;
-			padding: 0 1.5em;
+			padding: 0; /* 좌우 여백을 없앰 */
+			align-items: center; /* 수직으로 가운데 정렬 */
+			padding: 0 1em;
 		}
 
 			#header .logo strong {
@@ -3142,20 +3175,48 @@ input, select, textarea {
 				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-				background-color: #ffffff;
-				color: #242943;
+				color: #ffffff;
 				display: inline-block;
 				line-height: 1.65em;
 				margin-right: 0.325em;
-				padding: 0 0.125em 0 0.375em;
+				text-align: center;
 			}
 
 			#header .logo:hover strong {
-				background-color: #9bf1ff;
+				color: #9bf1ff;
 			}
 
 			#header .logo:active strong {
-				background-color: #53e3fb;
+				color: #53e3fb;
+			}
+		#header .title {
+			order: 2;  /* 가운데 배치 */
+			flex-grow: 1;
+			border: 0;
+			height: inherit;
+			font-size: 0.9em;
+			line-height: inherit;
+			text-align: center;
+		}
+			#header .title strong {
+				-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+				color: #ffffff;
+				display: inline-block;
+				line-height: 1.65em;
+				margin-right: 0.325em;
+				padding: 0;
+				text-align: center;
+			}
+			
+			#header .tile:active strong{
+				color: #9bf1ff;
+			}
+
+			#header .tile:hover strong{
+				color: #9bf1ff;
 			}
 
 		#header nav {
@@ -3163,49 +3224,52 @@ input, select, textarea {
 			display: -webkit-flex;
 			display: -ms-flex;
 			display: flex;
+			justify-content: center; /* 가로 중앙 정렬 */
+    		align-items: center; /* 수직 중앙 정렬 */
 			-moz-justify-content: -moz-flex-end;
-			-webkit-justify-content: -webkit-flex-end;
 			-ms-justify-content: -ms-flex-end;
 			justify-content: flex-end;
 			-moz-flex-grow: 1;
-			-webkit-flex-grow: 1;
 			-ms-flex-grow: 1;
-			flex-grow: 1;
+			order: 3;  /* 메뉴를 가장 왼쪽 배치 */
 			height: inherit;
 			line-height: inherit;
 		}
 
 			#header nav a {
+				display: flex;
+				display: inline-flex; 
+				padding: 0.5em 1em; /* 기본 여백 설정 */
+				margin: 0; /* 불필요한 마진 제거 */
+				align-items: center;  /* 수직 방향 중앙 정렬 */
+				text-align: center; /* 텍스트 중앙 정렬 */
 				border: 0;
-				display: block;
+				
 				font-size: 0.8em;
-				height: inherit;
 				line-height: inherit;
-				padding: 0 0.75em;
-				position: relative;
 				vertical-align: middle;
+				margin-left: 0;  /* 오른쪽 여백을 제거하여 빈 공간을 없앰 */
 			}
 
 				#header nav a:last-child {
-					padding-right: 1.5em;
+					padding-right: 0em;
 				}
 
-				#header nav a[href="#menu"] {
-					padding-right: 3em !important;
-				}
+				
 
 					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
 						background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='32' viewBox='0 0 24 32' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 2px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='11' x2='24' y2='11' /%3E%3Cline x1='0' y1='21' x2='24' y2='21' /%3E%3Cline x1='0' y1='16' x2='24' y2='16' /%3E%3C/svg%3E");
 						background-position: center;
 						background-repeat: no-repeat;
-						background-size: 24px 32px;
+						background-size: 24px 24px;
 						content: '';
 						display: block;
 						height: 100%;
 						position: absolute;
-						right: 1.5em;
+						right: 0.5em;
 						top: 0;
 						vertical-align: middle;
+						justify-content: center;
 						width: 24px;
 					}
 
@@ -3224,11 +3288,11 @@ input, select, textarea {
 					}
 
 					#header nav a[href="#menu"]:last-child {
-						padding-right: 3.875em !important;
+						padding-right: 0em !important;
 					}
 
 						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-							right: 2em;
+							right: 0em;
 						}
 
 		#header.reveal {
@@ -3289,10 +3353,29 @@ input, select, textarea {
 			#header nav a[href="#menu"] {
 				padding-right: 3em !important;
 			}
+			#header .logo {
+				padding: 0 1em;
+			}
 
 				#header nav a[href="#menu"]:last-child {
 					padding-right: 4em !important;
 				}
+
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
+					}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
+					}
+
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
+						}
 
 		}
 
@@ -3302,9 +3385,28 @@ input, select, textarea {
 				padding-right: 4em !important;
 			}
 
+			#header .logo {
+				padding: 0 1em;
+			}
 				#header nav a[href="#menu"]:last-child {
 					padding-right: 4.5em !important;
 				}
+
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
+					}
+
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
+					}
+
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
+						}
 
 		}
 
@@ -3321,27 +3423,28 @@ input, select, textarea {
 
 				#header nav a {
 					padding: 0 0.5em;
+					display: block !important;
 				}
 
-					#header nav a:last-child {
-						padding-right: 1em;
+				#header nav a:last-child {
+					padding-right: 1em;
+				}
+
+				#header nav a[href="#menu"] {
+					padding-right: 2em !important;
+				}
+
+					#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
+						right: 0.75em;
 					}
 
-					#header nav a[href="#menu"] {
-						padding-right: 3.25em !important;
+					#header nav a[href="#menu"]:last-child {
+						padding-right: 4em !important;
 					}
 
-						#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
-							right: 0.75em;
+						#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
+							right: 1.5em;
 						}
-
-						#header nav a[href="#menu"]:last-child {
-							padding-right: 4em !important;
-						}
-
-							#header nav a[href="#menu"]:last-child:before, #header nav a[href="#menu"]:last-child:after {
-								right: 1.5em;
-							}
 
 		}
 
@@ -3354,9 +3457,8 @@ input, select, textarea {
 			#header nav a[href="#menu"] {
 				overflow: hidden;
 				padding-right: 0 !important;
-				text-indent: 5em;
+				text-indent: 4em;
 				white-space: nowrap;
-				width: 5em;
 			}
 
 				#header nav a[href="#menu"]:before, #header nav a[href="#menu"]:after {
