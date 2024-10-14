@@ -1,5 +1,13 @@
 <!DOCTYPE HTML>
 <html>
+
+@font-face {
+    font-family: 'NoonnuBasicGothicRegular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noon-2410@1.0/NoonnuBasicGothicRegular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 <head>
     <title>대전대신고 1학년 수학여행</title>
     <meta charset="utf-8" />
@@ -84,46 +92,59 @@
                             style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
                             frameborder="0" allowfullscreen></iframe>
                 </div>
-
                 <h2> 이것만 타면 디즈니 끝!, 반드시 타야할 어트랙션 목록</h2>
                 <div class="attraction-info-container">
                     <div class="lands-list">
                         <ul>
-                            <li onclick="showAttraction('western')" style="color: #618ca8;">웨스턴랜드</li>
-                            <li onclick="showAttraction('critters')" style="color : #bf2e2e;">크리터 컨트리 (타지마세요) </li>
-                            <li onclick="showAttraction('fantasy')" style="color: #643f36; ">판타지랜드</li>
-                            <li onclick="showAttraction('toontown')" style="color: #986282; ">툰타운</li>
-                            <li onclick="showAttraction('adventure')" style="color: #3e5b3a; ">어드벤처랜드</li>
-                            <li onclick="showAttraction('world')">월드비저 (타지마세요)</li>
-                            <li onclick="showAttraction('tomorrow')" style="color: #eacf3a; " >투머로우랜드</li>
+                            <link rel="preconnect" href="https://fonts.googleapis.com">
+                            <li class="font_1" onclick="showAttraction('toontown')" style="color: #cf94b8;">툰타운</li>
+                            <li class="font_1" onclick="showAttraction('western')" style="color: #618ca8;">웨스턴랜드</li>
+                            <li class="font_1" onclick="showAttraction('fantasy')" style="color: #643f36;">판타지랜드</li>
+                            <li class="font_1" onclick="showAttraction('adventure')" style="color: #3e5b3a;">어드벤처랜드</li>
+                            <li class="font_1" onclick="showAttraction('tomorrow')" style="color: #eacf3a;" >투머로우랜드</li>
+                            <li class="font_1" onclick="showAttraction('world')">월드비저 (타지마세요)</li>
+                            <li class="font_1" onclick="showAttraction('critters')" style="color : #bf2e2e;">크리터 컨트리 (타지마세요) </li>
+                            <style>
+                                .font_1 {
+                                   
+                                }
+                            </style>
                         </ul>
                     </div>
 
                     <div class="attraction-info" id="western">
-                        <h2 style="color: #007acc;">  웨스턴랜드 어트랙션 </h2>
-                        <p> <h2 style="color: #618ca8;">어트랙션: 빅 썬더 마운틴, 스플래쉬 마운틴</h2> </p>
+                        <h2 class="JR" style="color: #007acc;">  웨스턴랜드 어트랙션 </h2>
+                        <p> <h3 style="color: #618ca8;">어트랙션: 빅 썬더 마운틴, 스플래쉬 마운틴</h3> </p>
                     </div>
 
                     <div class="attraction-info" id="fantasy">
-                        <h2 style = "color: #853d3d;">판타지랜드 어트랙션</h2>
-                        <p> <h2  style="color: #643f36; ">어트랙션: 미녀와 야수 '마법 이야기', 잇츠 어 스몰월드, 푸의 허니 헌트, 헌티드 멘션</h2> </p>
+                        <h2 class="JR" style = "color: #853d3d;">판타지랜드 어트랙션</h2>
+                        <p> <h3  style="color: #643f36; ">어트랙션: 미녀와 야수 '마법 이야기', 잇츠 어 스몰월드, 푸의 허니 헌트, 헌티드 멘션</h3> </p>
                     </div>
 
                     <div class="attraction-info" id="toontown">
-                        <h2 style = "color: #c7598e;"> 툰타운 어트랙션</h2>
-                        <p> <h2 style="color: #a8618f;"> 어트랙션: 미키의 매지컬 뮤직월드 </h2> </p>
+                        <h2 class="JR" style = "color: #c7598e;"> 툰타운 어트랙션</h2>
+                        <p> <h3 style="color: #a8618f;"> 어트랙션: 미키의 매지컬 뮤직월드 </h3> </p>
                     </div>
 
                     <div class="attraction-info"  id="adventure">
-                        <h2 style="color: #3e5b3a; ">어드벤처랜드 어트랙션</h2>
-                        <p> <h2 style="color: #5c8556; ">어트랙션: 캐리비안의 해적</h2> </p>
+                        <h2 class="JR" style="color: #3e5b3a; ">어드벤처랜드 어트랙션</h2>
+                        <p> <h3 style="color: #5c8556; ">어트랙션: 캐리비안의 해적, 정글 크루즈, 웨스턴 리버 철도</h3> </p>
                     </div>
 
                     <div class="attraction-info" id="tomorrow">
-                        <h2 style="color: #f5d209d0; ">투머로우랜드 어트랙션</h2>
-                        <p> <h2 style="color: #b8a32d; ">어트랙션: 스페이스 마운틴, 몬스터 주식회사 ride & go sick</h2> </p>
+                        <h2 class="JR" style="color: #ebe3b7; ">투머로우랜드 어트랙션</h2>
+                        <p> <h3 style="color: #b8a32d; ">어트랙션: 스페이스 마운틴, 몬스터 주식회사 ride & go sick</h3> </p>
                     </div>
+
+                    <style>
+                        .JR {
+                            text-align: center;
+                        }
+                    </style>
                 </div>
+
+                <hr style="border: 1px solid #ffffffa1; width: 100%;">
 
                 <!-- 음식점 목록 추가 -->
                 <h2>추천 음식점</h2>
