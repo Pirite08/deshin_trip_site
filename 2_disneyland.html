@@ -1,98 +1,167 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>2024학년도 대전대신고 1학년 수학여행 - 관광지 - 아키하바라</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<head>
+    <title>대전대신고 1학년 수학여행</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #333; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin: 10px 0; cursor: pointer; font-size: 1.2em; }
+        li:hover { text-decoration: underline; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .attraction-info-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .lands-list {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .attraction-info {
+            flex: 2;
+            padding: 20px;
+            background: #f0f8ff; /* 변경된 배경색 */
+            border: 2px solid #007acc; /* 테두리 추가 */
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* 그림자 효과 강화 */
+            display: none; /* 기본적으로 숨김 */
+            transition: all 0.3s ease; /* 효과 추가 */
+            margin-top: 20px; /* 위쪽 여백 추가 */
+        }
+        .attraction-info h2 { margin-top: 0; }
+        
+        /* 각 랜드에 대한 글자색 설정 */
+        #western { color: blue; } /* 블루 */
+        #critters { color: brown; } /* 갈색 */
+        #fantasy { color: brown; } /* 갈색 */
+        #toontown { color: pink; } /* 핑크 */
+        #adventure { color: green; } /* 그린 */
+        #tomorrow { color: orange; } /* 오렌지 */
+        
+        /* 음식점 색상 설정 */
+        .restaurant { color: red; } /* 빨간색 */
+    </style>
+</head>
+<body class="is-preload">
 
-				<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><img src="images/school_sym.png" alt="Logo" class="logo-image"/></a>
-						<a href="index.html" class="title"><strong>2024년도 대전대신고 1학년 수학여행</strong></a>
-						<nav>
-							<a href="#menu"></a>
-						</nav>
-					</header>
+<!-- Wrapper -->
+<div id="wrapper">
 
-				<!-- Menu -->
-					<nav id="menu">
-						<ul class="links">
-							<div class="clickable-div" onclick="location.href='index.html';"><font size="5">메인 페이지<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='schedule.html';"><font size="5">반별 일정<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='building.html';"><font size="5">관광지<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='food.html';"><font size="5">식단<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='japanese.html';"><font size="5">자주 쓰이는 일본어<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='caution.html';"><font size="5">주의사항<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='emer.html';"><font size="5">비상연락망<hr style="margin: 15px 0;"></font></div>
-							<div class="clickable-div" onclick="location.href='creators.html';"><font size="5">제작자들</font></div>
-						</ul>
-					</nav>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo"><strong>2024년도 대전대신고 1학년 수학여행</strong></a>
+        <nav>
+            <a href="#menu"></a>
+        </nav>
+    </header>
 
-				<!-- Main -->
-					<div id="main" class="alt">
-							<section id="one">
-								<div class="inner">
-									<header class="major">
-										<h1>디즈니랜드</h1>
-									</header>
-									<div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
-										<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dgDnYAMDqGWv19fmbpctae7jsJyDjL8&ehbc=2E312F&noprof=1" 
-												style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
-												frameborder="0" allowfullscreen></iframe>
-									</div>
-									
-									<p><strong style="color: rgb(37, 0, 248);">블루</strong> : 웨스턴랜드<br/><strong style="color: rgb(241, 162, 248);">핑크</strong> : 툰타운<br/><strong style="color: rgba(131, 231, 156, 0.815);">그린</strong> : 어드벤쳐 랜드<br/><strong style="color: rgb(241, 186, 84);">오렌지</strong> : 톰로랜드<br/><strong style="color: rgb(82, 55, 6);">브라운</strong> : 웨스턴랜드<br/><strong style="color: rgb(245, 113, 109);">레드</strong> : 음식점</p>
-									
-									<hr style="border: 1px solid #ffffffa1; width: 100%;">
+    <!-- Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <div class="clickable-div" onclick="location.href='index.html';"><font size="5">메인 페이지<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='schedule.html';"><font size="5">반별 일정<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='building.html';"><font size="5">관광지<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='food.html';"><font size="5">식단<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='japanese.html';"><font size="5">자주 쓰이는 일본어<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='caution.html';"><font size="5">주의사항<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='emer.html';"><font size="5">비상연락망<hr style="margin: 15px 0;"></font></div>
+            <div class="clickable-div" onclick="location.href='creators.html';"><font size="5">제작자들</font></div>
+        </ul>
+    </nav>
 
-									<!-- 새로운 랜드 추가 부분 -->
-									<h2>어트랙션 정보</h2>
-									<ul>
-										<li><a href="#" onclick="showAttractions('western');">웨스턴랜드</a></li>
-										<li><a href="#" onclick="showAttractions('critters');">크리터 컨트리</a></li>
-										<li><a href="#" onclick="showAttractions('fantasy');">판타지랜드</a></li>
-										<li><a href="#" onclick="showAttractions('toontown');">툰타운</a></li>
-										<li><a href="#" onclick="showAttractions('adventure');">어드벤처랜드</a></li>
-										<li><a href="#" onclick="showAttractions('world');">월드비저</a></li>
-										<li><a href="#" onclick="showAttractions('tomorrow');">투머로우랜드</a></li>
-									</ul>
+    <!-- Main -->
+    <div id="main" class="alt">
+        <section id="one">
+            <div class="inner">
+                <h1>디즈니랜드</h1>
+                <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;">
+                    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1dgDnYAMDqGWv19fmbpctae7jsJyDjL8&ehbc=2E312F&noprof=1" 
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" 
+                            frameborder="0" allowfullscreen></iframe>
+                </div>
 
-									<div id="attractions" style="margin-top: 20px;"></div>
-								</div>
-							</section>
-					</div>
-				</div>
+                <h2>반드시 타야할 어트랙션 목록</h2>
+                <div class="attraction-info-container">
+                    <div class="lands-list">
+                        <ul>
+                            <li onclick="showAttraction('western')" style="color: #618ca8;">웨스턴랜드</li>
+                            <li onclick="showAttraction('critters')" style="color : #bf2e2e;">크리터 컨트리</li>
+                            <li onclick="showAttraction('fantasy')" style="color: #643f36; ">판타지랜드</li>
+                            <li onclick="showAttraction('toontown')" style="color: #986282; ">툰타운</li>
+                            <li onclick="showAttraction('adventure')" style="color: #3e5b3a; ">어드벤처랜드</li>
+                            <li onclick="showAttraction('world')">월드비저</li>
+                            <li onclick="showAttraction('tomorrow')" style="color: #eacf3a; " >투머로우랜드</li>
+                        </ul>
+                    </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+                    <div class="attraction-info" id="western">
+                        <h2 style="color: #007acc;">  웨스턴랜드 어트랙션 </h2>
+                        <p> <h2 style="color: #618ca8;">어트랙션: 빅 썬더 마운틴, 스플래쉬 마운틴</h2> </p>
+                    </div>
 
-			<script>
-				function showAttractions(land) {
-					let attractions = {
-						western: "어트랙션: 롤러코스터, 카우보이 쇼",
-						critters: "어트랙션: 캐릭터 만나기, 놀이기구",
-						fantasy: "어트랙션: 미녀와 야수, 피노키오",
-						toontown: "어트랙션: 미키의 집, 미니의 집",
-						adventure: "어트랙션: 인디아나 존스, 정글 크루즈",
-						world: "어트랙션: 세계 각국의 문화 체험",
-						tomorrow: "어트랙션: 스페이스 마운틴, 스타 투어"
-					};
-					document.getElementById('attractions').innerHTML = attractions[land] || "해당 랜드는 존재하지 않습니다.";
-				}
-			</script>
+                    <div class="attraction-info" id="fantasy">
+                        <h2 style = "color: #853d3d;">판타지랜드 어트랙션</h2>
+                        <p> <h2  style="color: #643f36; ">어트랙션: 미녀와 야수 '마법 이야기', 잇츠 어 스몰월드, 푸의 허니 헌트, 헌티드 멘션</h2> </p>
+                    </div>
 
-	</body>
+                    <div class="attraction-info" id="toontown">
+                        <h2 style = "color: #c7598e;"> 툰타운 어트랙션</h2>
+                        <p> <h2 style="color: #a8618f;"> 어트랙션: 미키의 매지컬 뮤직월드 </h2> </p>
+                    </div>
+
+                    <div class="attraction-info"  id="adventure">
+                        <h2 style="color: #3e5b3a; ">어드벤처랜드 어트랙션</h2>
+                        <p> <h2 style="color: #5c8556; ">어트랙션: 캐리비안의 해적</h2> </p>
+                    </div>
+
+                    <div class="attraction-info" id="tomorrow">
+                        <h2 style="color: #f5d209d0; ">투머로우랜드 어트랙션</h2>
+                        <p> <h2 style="color: #b8a32d; ">어트랙션: 스페이스 마운틴, 몬스터 주식회사 ride & go sick</h2> </p>
+                    </div>
+                </div>
+
+                <!-- 음식점 목록 추가 -->
+                <h2>추천 음식점</h2>
+                <ul class="restaurant">
+                    <li>미키의 음식관</li>
+                    <li>미녀와 야수 레스토랑</li>
+                    <li>스플래쉬 바베큐</li>
+                    <li>판타지 푸드 트럭</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+<script>
+    function showAttraction(land) {
+        // 모든 어트랙션 정보를 숨김
+        const attractions = document.querySelectorAll('.attraction-info');
+        attractions.forEach(attraction => {
+            attraction.style.display = 'none';
+        });
+        
+        // 선택된 랜드의 어트랙션 정보를 보이게 함
+        const selectedAttraction = document.getElementById(land);
+        selectedAttraction.style.display = 'block';
+    }
+</script>
+
+</body>
 </html>
+
+
