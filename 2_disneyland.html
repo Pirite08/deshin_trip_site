@@ -1,12 +1,7 @@
 <!DOCTYPE HTML>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
-		<title>&nbsp;&nbsp;2024학년도 대전대신고 1학년 수학여행 - 관광지 - 아키하바라</title>
+		<title>2024학년도 대전대신고 1학년 수학여행 - 관광지 - 아키하바라</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -54,11 +49,26 @@
 									</div>
 									
 									<p><strong style="color: rgb(37, 0, 248);">블루</strong> : 웨스턴랜드<br/><strong style="color: rgb(241, 162, 248);">핑크</strong> : 툰타운<br/><strong style="color: rgba(131, 231, 156, 0.815);">그린</strong> : 어드벤쳐 랜드<br/><strong style="color: rgb(241, 186, 84);">오렌지</strong> : 톰로랜드<br/><strong style="color: rgb(82, 55, 6);">브라운</strong> : 웨스턴랜드<br/><strong style="color: rgb(245, 113, 109);">레드</strong> : 음식점</p>
+									
 									<hr style="border: 1px solid #ffffffa1; width: 100%;">
+
+									<!-- 새로운 랜드 추가 부분 -->
+									<h2>어트랙션 정보</h2>
+									<ul>
+										<li><a href="#" onclick="showAttractions('western');">웨스턴랜드</a></li>
+										<li><a href="#" onclick="showAttractions('critters');">크리터 컨트리</a></li>
+										<li><a href="#" onclick="showAttractions('fantasy');">판타지랜드</a></li>
+										<li><a href="#" onclick="showAttractions('toontown');">툰타운</a></li>
+										<li><a href="#" onclick="showAttractions('adventure');">어드벤처랜드</a></li>
+										<li><a href="#" onclick="showAttractions('world');">월드비저</a></li>
+										<li><a href="#" onclick="showAttractions('tomorrow');">투머로우랜드</a></li>
+									</ul>
+
+									<div id="attractions" style="margin-top: 20px;"></div>
 								</div>
 							</section>
 					</div>
-			</div>
+				</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -68,6 +78,21 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+
+			<script>
+				function showAttractions(land) {
+					let attractions = {
+						western: "어트랙션: 롤러코스터, 카우보이 쇼",
+						critters: "어트랙션: 캐릭터 만나기, 놀이기구",
+						fantasy: "어트랙션: 미녀와 야수, 피노키오",
+						toontown: "어트랙션: 미키의 집, 미니의 집",
+						adventure: "어트랙션: 인디아나 존스, 정글 크루즈",
+						world: "어트랙션: 세계 각국의 문화 체험",
+						tomorrow: "어트랙션: 스페이스 마운틴, 스타 투어"
+					};
+					document.getElementById('attractions').innerHTML = attractions[land] || "해당 랜드는 존재하지 않습니다.";
+				}
+			</script>
 
 	</body>
 </html>
