@@ -82,7 +82,11 @@
 										<script>
 											function playAudio(id) {
 												const audio = document.getElementById(id);
-												audio.play();
+												audio.play().catch((error) => {
+													console.log('Audio playback failed, retrying...', error);
+													audio.load(); // 오디오 다시 로드
+													audio.play(); // 다시 재생 시도
+												});
 											}
 										</script>
 										
